@@ -30,7 +30,7 @@ var map = L.map('map', {
 
 // Reference Tiles
 L.tileLayer('Tiles/{z}/{x}/{y}.png', {
-	minZoom: 3,
+	minZoom: 3.5,
 	maxZoom: 6,
 	continuousWorld: false,
 	noWrap: true,
@@ -44,8 +44,8 @@ map.setMaxBounds(new L.LatLngBounds(
 ));
 
 // Markers and Popups
-var marker = L.marker([0,0]).addTo(map);
-marker.bindPopup('<b>Text here!</b>').openPopup();
+//var marker = L.marker([0,0]).addTo(map);
+//marker.bindPopup('<b>Text here!</b>').openPopup();
 
 
 </script>
