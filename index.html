@@ -5,7 +5,6 @@
 
 <meta name="viewport" content="width:device-width, initial-scale=1.0">
 
-
 <link rel="stylesheet" href="scripts/leaflet/leaflet.css">
 
 <script src="scripts/leaflet/leaflet.js"></script>
@@ -26,7 +25,6 @@ var mapSW = [2829, 11778],
 var map = L.map('map', {
 	zoomSnap: 0.5,
 }).setView([0, 0], 1);
-
 
 
 // Reference Tiles
@@ -144,6 +142,18 @@ var set_sair = L.marker(map.unproject([7571, 9439], map.getMaxZoom()), {icon: ye
 	
 var set_wair = L.marker(map.unproject([6588, 6927], map.getMaxZoom()), {icon: yellowIcon})
 .bindPopup('<b>Western Air Temple</b>').bindTooltip('<b>Western Air Temple</b>');
+	
+var set_agna = L.marker(map.unproject([8138, 6078], map.getMaxZoom())
+.bindPopup('<b>Agna Qel&aposa</b>').bindTooltip('<b>Agna Qel&aposa</b>');
+			
+var set_wolf = L.marker(map.unproject([7786, 10272], map.getMaxZoom())
+.bindPopup('<b>Wolf Cove</b>').bindTooltip('<b>Wolf Cove</b>');
+	
+var set_nwater = L.marker(map.unproject([7920, 6120], map.getMaxZoom())
+.bindPopup('<b>Northern Water Tribes</b>').bindTooltip('<b>Northern Water Tribes</b>');
+
+var set_swater = L.marker(map.unproject([7588, 10392], map.getMaxZoom())
+.bindPopup('<b>Southern Water Tribes</b>').bindTooltip('<b>Southern Water Tribes</b>');
 
 //Landmark Markers
 var lm_siwong = L.marker(map.unproject([9277, 8360], map.getMaxZoom()), {icon: greyIcon})
@@ -163,12 +173,18 @@ var lm_divide = L.marker(map.unproject([8590, 7554], map.getMaxZoom()), {icon: g
 
 var lm_serpent = L.marker(map.unproject([9160, 7475], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Serpent&apos;s Pass</b>').bindTooltip('<b>Serpent&aposs Pass</b>');
+	
+var lm_nspirit = L.marker(map.unproject([8048, 5840], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Northern Spirit Portal</b>').bindTooltip('<b>Northern Spirit Portal</b>');
+	
+var lm_sspirit = L.marker(map.unproject([8070, 10588], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Southern Spirit Portal</b>').bindTooltip('<b>Southern Spirit Portal</b>');
 
 //Layer Groups
 var lg_set = L.layerGroup([set_omashu, set_wanhu, set_gaipan, set_senlin, set_fongs, set_plains, set_misty, set_chin, set_qinchao,
-			  set_nair, set_eair, set_sair, set_wair]);
+			  set_nair, set_eair, set_sair, set_wair, set_agna, set_wolf, set_nwater, set_swater]);
 
-var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers]);
+var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, lm_nspirit, lm_sspirit]);
 
 var overlay = {
 	"Settlements" : lg_set,
