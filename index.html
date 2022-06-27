@@ -28,6 +28,7 @@ var map = L.map('map', {
 }).setView([0, 0], 1);
 
 
+
 // Reference Tiles
 L.tileLayer('Tiles/{z}/{x}/{y}.png', {
 	minZoom: 3.5,
@@ -168,6 +169,26 @@ map.addLayer(lg_lm)
 
 L.control.layers(null, overlay, {collapsed: false}).addTo(map);
 
+//legend
+
+var legend = L.control({ position: "bottomleft" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Legend</h4>";
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon.png);background-repeat: no-repeat;"></i><span>Water</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-green.png);background-repeat: no-repeat;"></i><span>Earth</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-red.png);background-repeat: no-repeat;"></i><span>Fire</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-yellow.png);background-repeat: no-repeat;"></i><span>Air</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-grey.png);background-repeat: no-repeat;"></i><span>Landmarks</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-2x-violet.png);background-repeat: no-repeat;"></i><span>Players</span><br>';
+  
+  
+
+  return div;
+};
+
+legend.addTo(map);
 
 
 </script>
