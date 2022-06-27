@@ -16,18 +16,17 @@
 
 <script tyle="text/javascript">
 
-//Variables
-
+	//Variables
 var mapSW = [2829, 11778],
 	mapNE = [13566, 4646];
 
-// Declare Map Object
+	// Declare Map Object
 var map = L.map('map', {
 	zoomSnap: 0.5,
 }).setView([0, 0], 1);
 
 
-// Reference Tiles
+	// Reference Tiles
 L.tileLayer('Tiles/{z}/{x}/{y}.png', {
 	minZoom: 3.5,
 	maxZoom: 6,
@@ -89,8 +88,8 @@ var greyIcon = new L.Icon({
 });
 
 
-// Markers and Popups
-//LatLng
+	// Markers and Popups
+		//LatLng
 var marker = L.marker([0, 0], {
 	draggable: true,
 	icon: violetIcon
@@ -103,7 +102,7 @@ marker.on('dragend', function(e) {
 	.openOn(map);
 });
 
-//Settlement Markers
+	//Settlement Markers
 var set_omashu = L.marker(map.unproject([8795, 8172], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Omashu</b>').bindTooltip('<b>Omashu</b>');
 
@@ -155,7 +154,7 @@ var set_nwater = L.marker(map.unproject([7920, 6120], map.getMaxZoom()))
 var set_swater = L.marker(map.unproject([7588, 10392], map.getMaxZoom()))
 .bindPopup('<b>Southern Water Tribes</b>').bindTooltip('<b>Southern Water Tribes</b>');
 
-//Landmark Markers
+	//Landmark Markers
 var lm_siwong = L.marker(map.unproject([9277, 8360], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Si Wong Desert</b>').bindTooltip('<b>Si Wong Desert</b>');
 
@@ -180,7 +179,7 @@ var lm_nspirit = L.marker(map.unproject([8048, 5840], map.getMaxZoom()), {icon: 
 var lm_sspirit = L.marker(map.unproject([8070, 10588], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Southern Spirit Portal</b>').bindTooltip('<b>Southern Spirit Portal</b>');
 
-//Layer Groups
+	//Layer Groups
 var lg_set = L.layerGroup([set_omashu, set_wanhu, set_gaipan, set_senlin, set_fongs, set_plains, set_misty, set_chin, set_qinchao,
 			  set_nair, set_eair, set_sair, set_wair, set_agna, set_wolf, set_nwater, set_swater]);
 
@@ -191,14 +190,13 @@ var overlay = {
 	"Landmarks and Natural Features" : lg_lm
 }
 
-//Add Layer Control
+	//Add Layer Control
 map.addLayer(lg_set)
 map.addLayer(lg_lm)
 
 L.control.layers(null, overlay, {collapsed: false}).addTo(map);
 
-//legend
-
+	//legend
 var legend = L.control({ position: "bottomleft" });
 
 legend.onAdd = function(map) {
@@ -211,13 +209,10 @@ legend.onAdd = function(map) {
   div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-grey.png);background-repeat: no-repeat;"></i><span>Landmarks</span><br>';
   div.innerHTML += '<i class="icon" style="background-image: url(scripts/leaflet/images/marker-icon-2x-violet.png);background-repeat: no-repeat;"></i><span>Players</span><br>';
   
-  
-
   return div;
 };
 
 legend.addTo(map);
-
 
 </script>
 
