@@ -104,16 +104,16 @@ marker.on('dragend', function(e) {
 	//Settlement Markers
 		//Earth
 var set_omashu = L.marker(map.unproject([8795, 8172], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Omashu</b>').bindTooltip('<b>Omashu</b>');
+.bindPopup('<b>Omashu</b><br>Heng&apos;s hometown<br>The second largest Earth Kingdom city. Founded by Queen Oma, it is ruled by an monarch who is selected by an Earthbending tournament when the current monarch needs to be replaced.').bindTooltip('<b>Omashu</b>');
 
 var set_wanhu = L.marker(map.unproject([8145, 8249], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Wan Hu</b>').bindTooltip('<b>Wan Hu</b>');
 
 var set_gaipan = L.marker(map.unproject([8788, 7843], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Gaipan</b>').bindTooltip('<b>Gaipan</b>');
+.bindPopup('<b>Gaipan</b><br>Bao&apos;s hometown').bindTooltip('<b>Gaipan</b>');
 
 var set_senlin = L.marker(map.unproject([8171, 7982], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Senlin</b>').bindTooltip('<b>Senlin</b>');
+.bindPopup('<b>Senlin</b><br>Mica&apos;s hometown').bindTooltip('<b>Senlin</b>');
 
 var set_fongs = L.marker(map.unproject([8465, 8432], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Fong&apos;s Fortress</b>').bindTooltip('<b>Fong&apos;s Fortress</b>');
@@ -141,14 +141,14 @@ var set_sair = L.marker(map.unproject([7571, 9439], map.getMaxZoom()), {icon: ye
 .bindPopup('<b>Southern Air Temple</b>').bindTooltip('<b>Southern Air Temple</b>');
 	
 var set_wair = L.marker(map.unproject([6588, 6927], map.getMaxZoom()), {icon: yellowIcon})
-.bindPopup('<b>Western Air Temple</b>').bindTooltip('<b>Western Air Temple</b>');
+.bindPopup('<b>Western Air Temple</b><br>Meru&apos;s home before it was attacked by the Fire Nation').bindTooltip('<b>Western Air Temple</b>');
 	
 		//Water
 var set_agna = L.marker(map.unproject([8138, 6078], map.getMaxZoom()))
-.bindPopup('<b>Agna Qel&apos;a</b>').bindTooltip('<b>Agna Qel&apos;a</b>');
+.bindPopup('<b>Agna Qel&apos;a</b></br>Mana&apos;s hometown<br>Capitol of the Northern Water Tribes').bindTooltip('<b>Agna Qel&apos;a</b>');
 			
 var set_wolf = L.marker(map.unproject([7786, 10272], map.getMaxZoom()))
-.bindPopup('<b>Wolf Cove</b>').bindTooltip('<b>Wolf Cove</b>');
+.bindPopup('<b>Wolf Cove</b><br>Capitol of the Southern Water Tribes').bindTooltip('<b>Wolf Cove</b>');
 	
 var set_nwater = L.marker(map.unproject([7920, 6120], map.getMaxZoom()))
 .bindPopup('<b>Northern Water Tribes</b>').bindTooltip('<b>Northern Water Tribes</b>');
@@ -164,7 +164,7 @@ var set_nats = L.marker(map.unproject([7625, 7823], map.getMaxZoom()), {icon: re
 .bindPopup('<b>Natsuo Island</b>').bindTooltip('<b>Natsuo Island</b>');
 
 var set_shuj = L.marker(map.unproject([7261, 8042], map.getMaxZoom()), {icon: redIcon})
-.bindPopup('<b>Shu Jing</b>').bindTooltip('<b>Shu Jing</b>');
+.bindPopup('<b>Shu Jing</b><br>Heng was sent to this village to train under Master Toku').bindTooltip('<b>Shu Jing</b>');
 	
 var set_firp = L.marker(map.unproject([7336, 7949], map.getMaxZoom()), {icon: redIcon})
 .bindPopup('<b>Fire Island Prison</b>').bindTooltip('<b>Fire Island Prison</b>');
@@ -179,18 +179,18 @@ var set_harc = L.marker(map.unproject([5690, 8123], map.getMaxZoom()), {icon: re
 .bindPopup('<b>Harbor City</b>').bindTooltip('<b>Harbor City</b>');
 	
 var set_harb = L.marker(map.unproject([5563, 8074], map.getMaxZoom()), {icon: redIcon})
-.bindPopup('<b>Hari Bulkan</b>').bindTooltip('<b>Hari Bulkan</b>');
+.bindPopup('<b>Hari Bulkan</b><br>The capitol of the Fire Nation and home of the Fire Lord').bindTooltip('<b>Hari Bulkan</b>');
 
 
 	//Landmark Markers
 var lm_siwong = L.marker(map.unproject([9277, 8360], map.getMaxZoom()), {icon: greyIcon})
-.bindPopup('<b>Si Wong Desert</b>').bindTooltip('<b>Si Wong Desert</b>');
+.bindPopup('<b>Si Wong Desert</b><br>An expansive desert. It is said to have once been completely submerged until the Ocean Spirit moved away. On some nights, spirit fish swim in the air in areas where the veil between worlds is thinnest').bindTooltip('<b>Si Wong Desert</b>');
 
 var lm_foggy = L.marker(map.unproject([8845, 8588], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>The Foggy Swamp</b>').bindTooltip('<b>The Foggy Swamp</b>');
 
 var lm_twolovers = L.marker(map.unproject([8690, 8222], map.getMaxZoom()), {icon: greyIcon})
-.bindPopup('<b>Cave of Two Lovers</b>').bindTooltip('<b>Cave of Two Lovers</b>');
+.bindPopup('<b>Cave of Two Lovers</b><br>The secret meeting tunnels created by Oma and Shu after they learned earthbending from the Badgermoles').bindTooltip('<b>Cave of Two Lovers</b>');
 
 var lm_kolau = L.marker(map.unproject([8892, 8165], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Kolau Mountain Range</b>').bindTooltip('<b>Kolau Mountain Range</b>');
