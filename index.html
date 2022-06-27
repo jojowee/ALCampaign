@@ -153,6 +153,31 @@ var set_nwater = L.marker(map.unproject([7920, 6120], map.getMaxZoom()))
 
 var set_swater = L.marker(map.unproject([7588, 10392], map.getMaxZoom()))
 .bindPopup('<b>Southern Water Tribes</b>').bindTooltip('<b>Southern Water Tribes</b>');
+	
+var set_cres = L.marker(map.unproject([7683, 7879], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Crescent Island</b>').bindTooltip('<b>Crescent Island</b>');
+	
+var set_nats = L.marker(map.unproject([7625, 7823], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Natsuo Island</b>').bindTooltip('<b>Natsuo Island</b>');
+
+var set_shuj = L.marker(map.unproject([7261, 8042], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Shu Jing</b>').bindTooltip('<b>Shu Jing</b>');
+	
+var set_firp = L.marker(map.unproject([7336, 7949], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Fire Island Prison</b>').bindTooltip('<b>Fire Island Prison</b>');
+	
+var set_nchl = L.marker(map.unproject([6765, 8228], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>North Chung-ling</b>').bindTooltip('<b>North Chung-ling</b>');
+	
+var set_flh = L.marker(map.unproject([5724, 8112], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>First Lord&apos;s Harbor </b>').bindTooltip('<b>First Lord&apos;s Harbor</b>');
+
+var set_harc = L.marker(map.unproject([5690, 8123], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Harbor City</b>').bindTooltip('<b>Harbor City</b>');
+	
+var set_harb = L.marker(map.unproject([5563, 8074], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Hari Bulkan</b>').bindTooltip('<b>Hari Bulkan</b>');
+
 
 	//Landmark Markers
 var lm_siwong = L.marker(map.unproject([9277, 8360], map.getMaxZoom()), {icon: greyIcon})
@@ -178,12 +203,16 @@ var lm_nspirit = L.marker(map.unproject([8048, 5840], map.getMaxZoom()), {icon: 
 	
 var lm_sspirit = L.marker(map.unproject([8070, 10588], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Southern Spirit Portal</b>').bindTooltip('<b>Southern Spirit Portal</b>');
+	
+var lm_moce = L.marker(map.unproject([7830, 7652], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Mo Ce Sea</b>').bindTooltip('<b>Mo Ce Sea</b>');
 
 	//Layer Groups
 var lg_set = L.layerGroup([set_omashu, set_wanhu, set_gaipan, set_senlin, set_fongs, set_plains, set_misty, set_chin, set_qinchao,
-			  set_nair, set_eair, set_sair, set_wair, set_agna, set_wolf, set_nwater, set_swater]);
+			  set_nair, set_eair, set_sair, set_wair, set_agna, set_wolf, set_nwater, set_swater, set_cres, set_nats, 
+			  set_firp, set_shuj, set_nchl, set_fhl, set_harc, set_harb]);
 
-var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, lm_nspirit, lm_sspirit]);
+var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, lm_nspirit, lm_sspirit, lm_moce]);
 
 var overlay = {
 	"Settlements" : lg_set,
