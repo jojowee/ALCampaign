@@ -87,7 +87,6 @@ var greyIcon = new L.Icon({
 	shadowSize: [41, 41]
 });
 
-
 	// Markers and Popups
 		//LatLng
 var marker = L.marker([0, 0], {
@@ -103,6 +102,7 @@ marker.on('dragend', function(e) {
 });
 
 	//Settlement Markers
+		//Earth
 var set_omashu = L.marker(map.unproject([8795, 8172], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Omashu</b>').bindTooltip('<b>Omashu</b>');
 
@@ -130,6 +130,7 @@ var set_chin = L.marker(map.unproject([8522, 8955], map.getMaxZoom()), {icon: gr
 var set_qinchao = L.marker(map.unproject([8449, 8822], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Qinchao</b>').bindTooltip('<b>Qinchao</b>');
 	
+		//Air
 var set_nair = L.marker(map.unproject([8704, 6291], map.getMaxZoom()), {icon: yellowIcon})
 .bindPopup('<b>Northern Air Temple</b>').bindTooltip('<b>Northern Air Temple</b>');
 
@@ -142,6 +143,7 @@ var set_sair = L.marker(map.unproject([7571, 9439], map.getMaxZoom()), {icon: ye
 var set_wair = L.marker(map.unproject([6588, 6927], map.getMaxZoom()), {icon: yellowIcon})
 .bindPopup('<b>Western Air Temple</b>').bindTooltip('<b>Western Air Temple</b>');
 	
+		//Water
 var set_agna = L.marker(map.unproject([8138, 6078], map.getMaxZoom()))
 .bindPopup('<b>Agna Qel&apos;a</b>').bindTooltip('<b>Agna Qel&apos;a</b>');
 			
@@ -154,6 +156,7 @@ var set_nwater = L.marker(map.unproject([7920, 6120], map.getMaxZoom()))
 var set_swater = L.marker(map.unproject([7588, 10392], map.getMaxZoom()))
 .bindPopup('<b>Southern Water Tribes</b>').bindTooltip('<b>Southern Water Tribes</b>');
 	
+		//Fire
 var set_cres = L.marker(map.unproject([7683, 7879], map.getMaxZoom()), {icon: redIcon})
 .bindPopup('<b>Crescent Island</b>').bindTooltip('<b>Crescent Island</b>');
 	
