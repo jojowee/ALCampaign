@@ -104,10 +104,10 @@ marker.on('dragend', function(e) {
 	//Settlement Markers
 		//Earth
 var set_omashu = L.marker(map.unproject([8795, 8172], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Omashu</b><br>Heng&apos;s hometown<br>The second largest Earth Kingdom city. Founded by Queen Oma, it is ruled by an monarch who is selected by an Earthbending tournament when the current monarch needs to be replaced.').bindTooltip('<b>Omashu</b>');
+.bindPopup('<b>Omashu</b><br>Heng&apos;s hometown<br><br>Omashu is the second largest city in the Earth Kingdom after Ba Sing Se. An impressive sight, it stands in the southwest of the Earth Kingdom high atop a mountain within the Kolau Mountain Range. Legend has it that the city was founded to honor the tragic lovers Oma and Shu who carried on a forbidden romance despite hailing from warring villages. According to the story, Shu died in battle between the villages, and in her grief, Oma enacted an amazing feat of earthbending that could have destroyed both settlements. Instead, she declared the war over, and the two populations merged to create the city of Omashu.<br><br>The city&apos;s most unusual feature is its mail delivery system. This intricate system is a network of large chutes partly operated by earthbending. Omashu is also known for innovation and technological progress - its inventors see technology and bending as working hand in hand. Due to its size, importance, and unique innovations, Omashu has always competed with Ba Sing Se for prominence in the Earth Kingdom.').bindTooltip('<b>Omashu</b>');
 
 var set_wanhu = L.marker(map.unproject([8145, 8249], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Wan Hu</b>').bindTooltip('<b>Wan Hu</b>');
+.bindPopup('<b>Wan Hu</b><br><br>A small fishing village on the western coast of the Earth Kingdom. Mana took residence here after leaving Agna Qel&apos;a').bindTooltip('<b>Wan Hu</b>');
 
 var set_gaipan = L.marker(map.unproject([8788, 7843], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Gaipan</b><br>Bao&apos;s hometown').bindTooltip('<b>Gaipan</b>');
@@ -116,7 +116,7 @@ var set_senlin = L.marker(map.unproject([8171, 7982], map.getMaxZoom()), {icon: 
 .bindPopup('<b>Senlin</b><br>Mica&apos;s hometown').bindTooltip('<b>Senlin</b>');
 
 var set_fongs = L.marker(map.unproject([8465, 8432], map.getMaxZoom()), {icon: greenIcon})
-.bindPopup('<b>Fong&apos;s Fortress</b>').bindTooltip('<b>Fong&apos;s Fortress</b>');
+.bindPopup('<b>Fong&apos;s Fortress</b><br>Fong&apos;s Fortress is a secluded Earth Kingdom military facility situated in a mountain range on the west coast. It is one of the many Earth Kingdom strongholds in this area. The complex includes barracks for the troops, guest quarters, a large infirmary to care for injured soldiers, a temple for prayer, and even a recreation area for soldiers to relax. The fortress holds strategic significance to the Earth Kingdom, as its proximity to the Fire Nation mainland makes it well positioned for any potential invasion.').bindTooltip('<b>Fong&apos;s Fortress</b>');
 
 var set_plains = L.marker(map.unproject([9108, 8706], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Plains Village</b>').bindTooltip('<b>Plains Village</b>');
@@ -129,6 +129,45 @@ var set_chin = L.marker(map.unproject([8522, 8955], map.getMaxZoom()), {icon: gr
 
 var set_qinchao = L.marker(map.unproject([8449, 8822], map.getMaxZoom()), {icon: greenIcon})
 .bindPopup('<b>Qinchao</b>').bindTooltip('<b>Qinchao</b>');
+
+var set_abbe = L.marker(map.unproject([7574, 7145], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Abbey</b>').bindTooltip('<b>Abbey</b>');
+
+var set_makv = L.marker(map.unproject([7860, 7313], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Makapu Village</b>').bindTooltip('<b>Makapu Village</b>');
+
+var set_hart = L.marker(map.unproject([8044, 7481], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Harbor Town</b>').bindTooltip('<b>Harbor Town</b>');
+
+var set_semp = L.marker(map.unproject([8135, 7679], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Seedy Merchants Pier</b>').bindTooltip('<b>Seedy Merchants Pier</b>');
+
+var set_kyoi = L.marker(map.unproject([8463, 9092], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Kyoshi Island</b>').bindTooltip('<b>Kyoshi Island</b>');
+
+var set_gaol = L.marker(map.unproject([9074, 8847], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Gaoling</b>').bindTooltip('<b>Gaoling</b>');
+
+var set_tuzi = L.marker(map.unproject([9655, 8768], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Tuzin</b>').bindTooltip('<b>Tuzin</b>');
+
+var set_cheb = L.marker(map.unproject([8416, 6959], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Chenbao</b>').bindTooltip('<b>Chenbao</b>');
+
+var set_agrz = L.marker(map.unproject([9603, 6949], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Agrarian Zone</b>').bindTooltip('<b>Agrarian Zone</b>');
+
+var set_outw = L.marker(map.unproject([9771, 7369], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Outer Wall</b>').bindTooltip('<b>Outer Wall</b>');
+
+var set_lowr = L.marker(map.unproject([9877, 7162], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Lower Ring</b>').bindTooltip('<b>Lower Ring</b>');
+
+var set_midr = L.marker(map.unproject([9864, 6992], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Middle Ring</b>').bindTooltip('<b>Middle Ring</b>');
+
+var set_uppr = L.marker(map.unproject([9924, 7015], map.getMaxZoom()), {icon: greenIcon})
+.bindPopup('<b>Upper Ring</b>').bindTooltip('<b>Upper Ring</b>');
 	
 		//Air
 var set_nair = L.marker(map.unproject([8704, 6291], map.getMaxZoom()), {icon: yellowIcon})
@@ -157,6 +196,49 @@ var set_swater = L.marker(map.unproject([7588, 10392], map.getMaxZoom()))
 .bindPopup('<b>Southern Water Tribes</b>').bindTooltip('<b>Southern Water Tribes</b>');
 	
 		//Fire
+
+var set_wasi = L.marker(map.unproject([7535, 8888], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Water Tribes Sacred Island</b><br>For thousands of years, severe disputes between the Northern and the Southern Water Tribes were brought to this island, and chiefs made a voyage to the sacred island at least once in their careers to pay respect to the land.<br><br> During the era of Roku, on one such voyage, a Southern chieftain by the name of Tana was surprised to find Fire Nation ships docked on the island. Through political channels, Northern chief Skiri learned that the Fire Nation had claimed the island as their own. Skiri was ready to send a majority of his fleet to reclaim it, but he needed support from the Southern chieftains, who for some time did not come to a consensus on how to proceed, as they were not willing to start a war with the Fire Nation.<br><br>It is now controlled by the Fire Nation.').bindTooltip('<b>Water Tribes Sacred Island</b>');
+
+var set_suwc = L.marker(map.unproject([6096, 7241], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Sun Warrior City</b>').bindTooltip('<b>Sun Warrior City</b>');
+
+var set_embi = L.marker(map.unproject([6432, 8047], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Ember Island</b>').bindTooltip('<b>Ember Island</b>');
+
+var set_filv = L.marker(map.unproject([6401, 8001], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Fire Lily Village</b>').bindTooltip('<b>Fire Lily Village</b>');
+
+var set_chcv = L.marker(map.unproject([6317, 8713], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Chin Cha Village</b>').bindTooltip('<b>Chin Cha Village</b>');
+
+var set_bhai = L.marker(map.unproject([6307, 8192], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Bhanti Island</b>').bindTooltip('<b>Bhanti Island</b>');
+
+var set_janh = L.marker(map.unproject([7411, 7774], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Jang Hui</b>').bindTooltip('<b>Jang Hui</b>')
+
+var set_finb = L.marker(map.unproject([7551, 7759], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Fire Nation Bazaar</b>').bindTooltip('<b>Fire Nation Bazaar</b>');
+
+var set_whai = L.marker(map.unproject([8033, 9082], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Whaletail Island</b>').bindTooltip('<b>Whaletail Island</b>');
+
+var set_yuda = L.marker(map.unproject([6971, 7138], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Yu Dao</b>').bindTooltip('<b>Yu Dao</b>');
+
+var set_zigv = L.marker(map.unproject([7335, 6551], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Zigan Village</b>').bindTooltip('<b>Zigan Village</b>');
+
+var set_fncv = L.marker(map.unproject([7918, 6811], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Fire Nation Colonial Village</b>').bindTooltip('<b>Fire Nation Colonial Village</b>');
+
+var set_pohs = L.marker(map.unproject([8051, 7095], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Pohuai Stronghold</b>').bindTooltip('<b>Pohuai Stronghold</b>');
+
+var set_taku = L.marker(map.unproject([8144, 7308], map.getMaxZoom()), {icon: redIcon})
+.bindPopup('<b>Taku</b>').bindTooltip('<b>Taku</b>');
+
 var set_cres = L.marker(map.unproject([7683, 7879], map.getMaxZoom()), {icon: redIcon})
 .bindPopup('<b>Crescent Island</b>').bindTooltip('<b>Crescent Island</b>');
 	
@@ -210,20 +292,60 @@ var lm_sspirit = L.marker(map.unproject([8070, 10588], map.getMaxZoom()), {icon:
 var lm_moce = L.marker(map.unproject([7830, 7652], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Mo Ce Sea</b>').bindTooltip('<b>Mo Ce Sea</b>');
 
-	//Layer Groups
-var lg_set = L.layerGroup([set_omashu, set_wanhu, set_gaipan, set_senlin, set_fongs, set_plains, set_misty, set_chin, set_qinchao,
-			  set_nair, set_eair, set_sair, set_wair, set_agna, set_wolf, set_nwater, set_swater, set_cres, set_nats, 
-			  set_firp, set_shuj, set_nchl, set_flh, set_harc, set_harb]);
+var lm_pamr = L.marker(map.unproject([7240, 9518], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Patola Mountain Range</b>').bindTooltip('<b>Patola Mountain Range</b>');
 
-var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, lm_nspirit, lm_sspirit, lm_moce]);
+var lm_wulf = L.marker(map.unproject([7036, 7334], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Wulong Forest</b>').bindTooltip('<b>Wulong Forest</b>');
+
+var lm_solt = L.marker(map.unproject([7740, 7176], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Statue of Lady Tienhai</b>').bindTooltip('<b>Statue of Lady Tienhai</b>');
+
+var lm_taim = L.marker(map.unproject([8656, 6676], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Taihua Mountains</b>').bindTooltip('<b>Taihua Mountains</b>');
+
+var lm_lakl = L.marker(map.unproject([10114, 7140], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Lake Laogai</b>').bindTooltip('<b>Lake Laogai</b>');
+
+var lm_wstl = L.marker(map.unproject([9520, 8266], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Wan Shi Tong&apos;s Library</b>').bindTooltip('<b>Wan Shi Tong&apos;s Library</b>');
+
+var lm_chab = L.marker(map.unproject([10056, 8132], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Chameleon Bay</b>').bindTooltip('<b>Chameleon Bay</b>');
+
+var lm_fumb = L.marker(map.unproject([9322, 7566], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Full Moon Bay</b>').bindTooltip('<b>Full Moon Bay</b>');
+
+	//Layer Groups
+
+var lg_water = L.layerGroup([set_agna, set_wolf, set_nwater, set_swater]);
+
+var lg_earth = L.layerGroup([set_abbe, set_makv, set_hart, set_semp, set_kyoi, set_gaol, 
+		set_tuzi, set_cheb, set_agrz, set_outw, set_lowr, set_midr, set_uppr, set_omashu, set_wanhu, 
+		set_gaipan, set_senlin, set_fongs, set_plains, set_misty, set_chin, set_qinchao]);
+
+var lg_fire = L.layerGroup([set_cres, set_nats, set_firp, set_shuj, set_nchl, set_flh, 
+		set_harc, set_harb, set_wasi, set_suwc, set_embi, set_filv, set_chcv, 
+		set_bhai, set_zigv, set_fncv, set_pohs, set_taku, set_janh, set_finb, set_whai, set_yuda]);
+
+var lg_air = L.layerGroup([set_nair, set_eair, set_sair, set_wair]);
+
+var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, 
+		lm_nspirit, lm_sspirit, lm_moce, lm_pamr, lm_wulf, lm_solt, lm_taim, lm_lakl, lm_wstl, lm_chab, lm_fumb]);
 
 var overlay = {
-	"Settlements" : lg_set,
+	"Water Tribe Settlements" : lg_water,
+	"Earth Kingdom Settlements" : lg_earth,
+	"Fire Nation Settlements" : lg_fire,
+	"Air Nomad Settlements" : lg_air,
 	"Landmarks and Natural Features" : lg_lm
 }
 
 	//Add Layer Control
-map.addLayer(lg_set)
+map.addLayer(lg_water)
+map.addLayer(lg_earth)
+map.addLayer(lg_fire)
+map.addLayer(lg_air)
 map.addLayer(lg_lm)
 
 L.control.layers(null, overlay, {collapsed: false}).addTo(map);
