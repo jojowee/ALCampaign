@@ -320,6 +320,9 @@ var lm_chab = L.marker(map.unproject([10056, 8132], map.getMaxZoom()), {icon: gr
 
 var lm_fumb = L.marker(map.unproject([9322, 7566], map.getMaxZoom()), {icon: greyIcon})
 .bindPopup('<b>Full Moon Bay</b>').bindTooltip('<b>Full Moon Bay</b>');
+	
+var lm_xism = L.marker(map.unproject([9798, 8638], map.getMaxZoom()), {icon: greyIcon})
+.bindPopup('<b>Xishaan Mountains</b>').bindTooltip('<b>Xishaan Mountains</b>');
 
 	//Layer Groups
 
@@ -336,7 +339,7 @@ var lg_fire = L.layerGroup([set_cres, set_nats, set_firp, set_shuj, set_nchl, se
 var lg_air = L.layerGroup([set_nair, set_eair, set_sair, set_wair]);
 
 var lg_lm = L.layerGroup([lm_siwong, lm_foggy, lm_kolau, lm_divide, lm_serpent, lm_twolovers, 
-		lm_nspirit, lm_sspirit, lm_moce, lm_pamr, lm_wulf, lm_solt, lm_taim, lm_lakl, lm_wstl, lm_chab, lm_fumb]);
+		lm_nspirit, lm_sspirit, lm_moce, lm_pamr, lm_wulf, lm_solt, lm_taim, lm_lakl, lm_wstl, lm_chab, lm_fumb, lm_xism]);
 
 var overlay = {
 	"Water Tribe Settlements" : lg_water,
